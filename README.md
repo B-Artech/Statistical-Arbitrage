@@ -16,6 +16,7 @@ Base on the paper study
   - [Stage four - Risk Monitor](#stage-four---risk-monitor)
   - [Stage five - Watch-list](#stage-five---watch-list)
   - [Improvement of the system](#improvement-of-the-system)
+  - [Contributing](#Contributing)
 
 ## Disclaimer
 
@@ -101,3 +102,7 @@ TRADING FROM WATCH-LIST
 
 Before execution trades base on predefine signal parameters, trades should first be added to a watchlist for gatekeeping.
 This allows for monitoring performance before making a final decision on execution.
+
+
+## Contributing
+Contributions are welcome! If you'd like to contribute to this project
