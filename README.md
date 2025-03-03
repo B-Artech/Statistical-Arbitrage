@@ -59,7 +59,7 @@ Compute the spread and z_score to determine trade signal.
 Opening long when spread is undervalued and showing reversal signals.
 Opening short when spread is overvalued and showing reversal signals.
 Ensuring that trades are only opened if there is no existing open position for the pair.
-Save trade details for tracing and risk management.
+Save trade details for tracking and risk management.
 
 ## Stage four - Risk Monitor
 
@@ -68,7 +68,7 @@ Risk Monitor works as a separate bot to monitor account risk for drawdowns.
 Risk parameter management:
 Maximum daily risk threshold of -5% from the high water mark.
 Account balance is measured every 60 seconds and tha daily threshold is restarting at the beginning of the day.
-If the los exceeds the threshold all positions are closed and trading is suspended for 24H.
+If the loss exceeds the threshold all positions are closed and trading is suspended for 24H.
 
 ## Stage five - Watch-list
 
