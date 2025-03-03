@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Crypto Spread Monitor</title>
+   <style>
+       table { width: 100%; border-collapse: collapse; }
+       th, td { border: 1px solid #3b724b; padding: 6px; text-align: left; font-size: 14px; }
+       th { background-color: #cee7f8; }
+       .container { max-width: 1200px; margin: 0 auto; padding: 10px; }
+       h1 { font-size: 20px; margin-bottom: 10px; }
+       .positive { color: green; font-weight: bold; }
+       .negative { color: red; font-weight: bold; }
+       .neutral { font-size: 12px; color: rgb(43, 42, 42); font-weight: bold;}
+   </style>
+</head>
+<body>
+   <div class="container">
+       <h1>Crypto Spread Monitor</h1>
+       <div id="tableData"></div>
+   </div>
+   <script>
+       function updateData() {
+           fetch('http://localhost:5000/data')
+               .then(response => response.json())
+               .then(data => {
+                   if (data && data.length > 0) {
+                       const fixedColumns = ["Ind", "L Sym", "S Sym", "L Ent", "S Ent", "Str Spr", "Cur L", "Cur S", "Cur Spr", "% Chg", "Cyc"];
+                       const allColumns = Object.keys(data[0]);
+                       const hourColumns = allColumns.filter(col => col.startsWith("H ")).sort((a, b) => {
+                           return parseInt(a.replace("H ", "")) - parseInt(b.replace("H ", ""));
+                       });
+                       const columns = [...fixedColumns, ...hourColumns];
+                       updateTable(data, columns);
+                   }
+               });
+       }
+
+       function updateTable(data, columns) {
+           let html = '<table><thead><tr>';
+           columns.forEach(col => html += `<th>${col}</th>`);
+           html += '</tr></thead><tbody>';
+
+           data.forEach(row => {
+               html += '<tr>';
+               columns.forEach(col => {
+                   let value = row[col] !== undefined ? row[col] : '';
+                   let cssClass = 'neutral';
+                   if (!isNaN(value) && value !== '' && (col === "% Chg" || col.startsWith("H "))) {
+                       value = parseFloat(value) * 100; // Convert to percentage
+                       value = value.toFixed(3) + "%"; // Format to 2 decimal places with % sign
+                       cssClass = parseFloat(value) > 0 ? 'positive' : parseFloat(value) < 0 ? 'negative' : 'neutral';
+                   }
+                   html += `<td class="${cssClass}">${value}</td>`;
+               });
+               html += '</tr>';
+           });
+           html += '</tbody></table>';
+           document.getElementById('tableData').innerHTML = html;
+       }
+
+       setInterval(updateData, 1000); // Update every second
+       updateData();
+   </script>
+</body>
+</html>

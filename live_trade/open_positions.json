@@ -1,0 +1,11 @@
+[{"sym1": "LPTUSDT", "sym1_side": "BUY", "sym1_size": 1.4736221632773359, "sym1_price": 6.786, "sym2": "COREUSDT", "sym2_side": "SELL", "sym2_size": 20.504408447816278, "sym2_price": 0.4877, "z_score": -2.059049305943462, "half_life": 5.840875946610957, "hedge_ratio": 8.164384841546859, "timestamp": "2025-02-26T20:03:05.094000"},
+
+  {"sym1": "STGUSDT", "sym1_side": "BUY", "sym1_size": 41.58004158004158, "sym1_price": 0.2405, "sym2": "PROMUSDT", "sym2_side": "SELL", "sym2_size": 1.5837820715869497, "sym2_price": 6.314, "z_score": -2.249036239765629, "half_life": 4.795902192491904, "hedge_ratio": 0.0447964852162287, "timestamp": "2025-02-26T20:03:47.280418"}, 
+
+  {"sym1": "METISUSDT", "sym1_side": "SELL", "sym1_size": 0.43215211754537597, "sym1_price": 23.14, "sym2": "SLERFUSDT", "sym2_side": "BUY", "sym2_size": 155.6420233463035, "sym2_price": 0.06425, "z_score": 2.0052605904825525, "half_life": 6.536138159769902, "hedge_ratio": 153.90804268266015, "timestamp": "2025-02-26T20:05:50.232821"}, 
+
+  {"sym1": "MASKUSDT", "sym1_side": "SELL", "sym1_size": 4.483299708585519, "sym1_price": 2.2305, "sym2": "u1000SHIBUSDT", "sym2_side": "BUY", "sym2_size": 719.7869430648528, "sym2_price": 0.013892999999999999, "z_score": 2.8869210271619203, "half_life": 3.5013759273961145, "hedge_ratio": 118.2884492672536, "timestamp": "2025-02-26T20:06:45.194043"}, 
+
+  {"sym1": "NEOUSDT", "sym1_side": "BUY", "sym1_size": 1.0835410120273052, "sym1_price": 9.229, "sym2": "ZILUSDT", "sym2_side": "SELL", "sym2_size": 769.8229407236336, "sym2_price": 0.01299, "z_score": -2.0562436080059734, "half_life": 3.152462688529541, "hedge_ratio": 583.537883639752, "timestamp": "2025-02-26T20:11:20.224893"},
+  
+   {"sym1": "QNTUSDT", "sym1_side": "SELL", "sym1_size": 0.10069986405518352, "sym1_price": 99.305, "sym2": "ZEUSUSDT", "sym2_side": "BUY", "sym2_size": 34.42933379239112, "sym2_price": 0.29045, "z_score": 2.3361065865889374, "half_life": 9.812446778322697, "hedge_ratio": 94.68519203906544, "timestamp": "2025-02-27T17:27:33.364908"}]
