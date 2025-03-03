@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 from arch import arch_model  
-import live_trade.main_key as k
+import main_key as k
 
 phemex = ccxt.phemex({
     'apiKey': k.key,
