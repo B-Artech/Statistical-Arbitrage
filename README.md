@@ -46,7 +46,7 @@ Half Life of mean reversion using Orstein-Uhlenbeck process
 
 ## Stage two -  Backtest
 
-By performing a simple backtest, we can significantly refine the selection pairs, reducing the initial pool from +20000 pairs to only the mots statistically viable ones.
+By performing a simple backtest, we can significantly refine the selection pairs, reducing the initial pool from +20000 pairs to only the most statistically viable ones.
 This process evaluates the historical performance of selected pairs using mean reverting strategy, testing entry and exits signal base on the z_score threshold.
 The results helps identify pairs with the highest profitability potential, improving confidence before moving into live trading.
 
