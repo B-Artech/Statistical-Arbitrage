@@ -1,6 +1,7 @@
 # PAIRS TRADING STATISTICAL ARBITRAGE
 
 Base on the paper study
+
 (http://yats.free.fr/doc/cointegration-en.pdf)
 (https://estudogeral.uc.pt/retrieve/275337/Dissertation_Ines_Fernandes.pdf)
 
