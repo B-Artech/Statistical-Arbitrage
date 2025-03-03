@@ -1,4 +1,4 @@
-# PAIRS'S TRADING STATISTICAL ARBITRAGE
+# PAIRS TRADING STATISTICAL ARBITRAGE
 
 Base on the paper study
 (http://yats.free.fr/doc/cointegration-en.pdf)
