@@ -10,7 +10,7 @@ DOLLAR_SIZE = 10
 
 async def trade_entry():
     
-    df = pd.read_csv(r'C:\Users\Bartezz\Dropbox\algo\Statistical Arbitrage\live_trade\cointegration_pairs.csv')
+    df = pd.read_csv(r'live_trade\cointegration_pairs.csv')
     timeframe = '1d'
     limit = 100
     OVERBOUGHT_LEVEL = 80
