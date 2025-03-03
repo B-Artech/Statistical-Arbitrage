@@ -33,10 +33,15 @@ Pair selection process:
 
 Cointegration test using Engle-Granger test to determine whether two assets move together over time
 Calculate correleation and dependency metrics between assets
+
   Person correlation
+  
   Sperman Correlation
+  
   Kendall's Tau ordinal association
+  
 Hedge Ratio using Ordinary Least Square regression
+
 Half Life of mean reversion using Orstein-Uhlenbeck process
 
 ## Stage two -  Backtest
