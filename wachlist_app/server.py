@@ -5,7 +5,7 @@ import pandas as pd # type: ignore
 app = Flask(__name__)
 CORS(app)
 
-CSV_PATH = r'C:\Users\Bartezz\Dropbox\algo\spreds\crypto_spread_data.csv'
+CSV_PATH = r'crypto_spread_data.csv'
 @app.route('/data')
 def get_data():
     df = pd.read_csv(CSV_PATH)
