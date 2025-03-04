@@ -1,3 +1,7 @@
+''' 
+The script provides a volatility index based on the GARCH model, helping traders gauge market risk and trend stability across multiple cryptocurrencies.
+'''
+
 import ccxt
 import pandas as pd
 import numpy as np
