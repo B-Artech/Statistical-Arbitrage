@@ -16,11 +16,10 @@ Base on the paper study
   - [Stage four - Risk Monitor](#stage-four---risk-monitor)
   - [Stage five - Watch-list](#stage-five---watch-list)
   - [Improvement of the system](#improvement-of-the-system)
-  - [Contributing](#Contributing)
 
 ## Disclaimer
 
-This is for educational purposes only, do not run this in production !!!
+This is for educational purposes only.
 
 ## Stage one - pair analysis framework
 
@@ -87,32 +86,12 @@ Start server locally and run watchlist.py.
 The app will automatically rearrange positions to always display nominator(Symbol we buy) in the first position.
 This allow us to easily monitor the performance of the spread and keep an eye on the percentage variation (% Var).
 
+
+
 ## Improvement of the system
 
-VOLATILITY
-
-Trading  specific timeframe base volatility:
-High volatility --> Higher Timeframe resolution ex 1d
-Low volatility --> Lower Timeframe resolution ex 1h
-
-ROLLING Z_SCORE vs STATIONARY SPREAD
-
-Currently, out primary execution signal is base on a rolling z_score, with default lookback period of 21(this parameter can be adjusted).
-Since finding truly stationary pairs is somewhat rare, the rolling z_score approach helps identify potential trading opportunities more frequently.
-
-Although this system is designed for automation, some manual intervention is still required.
-I highly recommend maintaining a separate file for tracing the most promising pairs for further analysis.
-
-TRADING FROM WATCH-LIST
-
-Before execution trades base on predefine signal parameters, trades should first be added to a watchlist for gatekeeping.
-This allows for monitoring performance before making a final decision on execution.
-
-
-## Contributing
-Contributions are welcome! If you'd like to contribute to this project
-
  System Objective
+ 
 The system will continuously scan for trading pairs that reach a predefined Z-score threshold. Instead of opening a live trade immediately,
 these pairs will be added to a watchlist for further observation.
 The goal is to monitor their spread movement and performance over time before committing to a live trade.
@@ -151,7 +130,16 @@ If performance remains inconsistent, the pair is either removed from the watchli
 
 
 3 Key Benefits of This Approach
+
 ✔ Avoids Premature Entries: Ensures that only strong candidates are traded, reducing false signals.
+
 ✔ Data-Driven Trade Selection: Observes pairs before committing capital, leading to better trade quality.
+
 ✔ Performance-Based Filtering: Helps eliminate weak opportunities early.
+
 ✔ Flexible Decision-Making: Allows both manual and automated execution based on proven performance.
+
+
+Contributions are welcome! If you'd like to contribute to this project
+
+
