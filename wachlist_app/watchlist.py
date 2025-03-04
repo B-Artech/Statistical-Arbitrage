@@ -1,3 +1,9 @@
+
+'''
+Watchlist helps monitor pair trades performance on predefined timeframe
+'''
+
+
 import ccxt
 import pandas as pd
 import schedule
