@@ -1,5 +1,5 @@
 """
-BINANCE LIQUIDATION MONITOR 
+Monitors and logs Binance Futures liquidation events, helping traders identify significant market movements in real time
 """
 
 import asyncio
