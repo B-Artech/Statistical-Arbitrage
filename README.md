@@ -53,13 +53,6 @@ The results helps identify pairs with the highest profitability potential, impro
 
 ## Stage three - Live trading
 
-Timeframe is 1 Day or 1 hour base on the volatility levels, usual when volatility dries out we can change timeframes to 1h.
-
-Position size & leverage:
-Positions size are determined using dollar terms base on the ATR measures of each asset in a trading pair.
-
-Leverage are used in this strategy between 2-3x to reduce margin requirements.
-
 Execution of live Trades:
 
 Obtaining information about traded pairs from csv file.
