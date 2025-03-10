@@ -93,8 +93,9 @@ This allow us to easily monitor the performance of the spread and keep an eye on
 
  System Objective
  
-The system will continuously scan for trading pairs that reach a predefined Z-score threshold. Instead of opening a live trade immediately,
-these pairs will be added to a watchlist for further observation.
+The system will continuously scan for trading pairs that reach a predefined Z-score threshold. Instead of opening a live trade immediately, these pairs will be added to a watchlist for further observation.
+
+This approach allows for identifying high-potential trading pairs based on their performance, leading to the discovery of even better opportunities, such as PEPEUSDT/WIFUSDT.
 
 The goal is to monitor their spread movement and performance over time before committing to a live trade.
 
@@ -144,7 +145,7 @@ The trader (or automated system) can then decide to open a live trade based on p
 If performance remains inconsistent, the pair is either removed from the watchlist or monitored further.
 
 
-3 Key Benefits of This Approach
+Key Benefits of This Approach
 
 ✔ Avoids Premature Entries: Ensures that only strong candidates are traded, reducing false signals.
 
@@ -155,6 +156,6 @@ If performance remains inconsistent, the pair is either removed from the watchli
 ✔ Flexible Decision-Making: Allows both manual and automated execution based on proven performance.
 
 
-Contributions are welcome! If you'd like to contribute to this project
+Contributions are welcome! If you'd like to contribute to this project please contact me on bart.staskiewicz@gmail.com
 
 
