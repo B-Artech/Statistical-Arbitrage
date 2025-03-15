@@ -10,12 +10,11 @@ Base on the paper study
 - [PAIRS'S TRADING STATISTICAL ARBITRAGE](#pairss-trading-statistical-arbitrage)
   - [Table of Contents](#table-of-contents)
   - [Disclaimer](#disclaimer)
-  - [Stage one - pair analysis framework](#stage-one---pair-analysis-framework)
-  - [Stage two -  Backtest](#stage-two----backtest)
-  - [Stage three - Live trading](#stage-three---live-trading)
-  - [Stage four - Risk Monitor](#stage-four---risk-monitor)
-  - [Stage five - Watch-list](#stage-five---watch-list)
-  - [Improvement of the system](#improvement-of-the-system)
+  - [Pair analysis framework](#stage-one---pair-analysis-framework)
+  - [Backtest](#stage-two----backtest)
+  - [Live trading](#stage-three---live-trading)
+  - [Risk Monitor](#stage-four---risk-monitor)
+  - [Watch-list](#stage-five---watch-list)
 
 ## Disclaimer
 
