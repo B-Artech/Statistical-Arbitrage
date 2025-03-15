@@ -19,12 +19,10 @@ Base on the paper study
 
 ## Disclaimer
 
-This is for educational purposes only.
+**This is for educational purposes only. Although the code works right out of the box, use it only in a testing environment.**
 
 ## Stage one - pair analysis framework
 
-The Idea behind this strategy came from many sources and research.
-Thus I came up with full trading framework strategy broken down to several stages.
 
 This methodology provides foundation for statistical arbitrage trading strategies identifying assets with significant mean-reverting properties.
 
@@ -32,14 +30,15 @@ Pair selection process:
 
 Cointegration test using Engle-Granger test to determine whether two assets move together over time
 Calculate correleation and dependency metrics between assets
-
+  
   Person correlation
   
   Sperman Correlation
   
   Kendall's Tau ordinal association
   
-Hedge Ratio using Ordinary Least Square regression
+Hedge Ratio using Ordinary Least Square regression (While OLS provides a static hedge ratio, the Kalman Filter offers a dynamic approach that allows the hedge ratio to evolve over time.
+Logarithmic returns are often preferred with Kalman approach)
 
 Half Life of mean reversion using Orstein-Uhlenbeck process
 
@@ -86,76 +85,3 @@ Start server locally and run watchlist.py.
 The app will automatically rearrange positions to always display nominator(Symbol we buy) in the first position.
 
 This allow us to easily monitor the performance of the spread and keep an eye on the percentage variation (% Var).
-
-
-
-## Improvement of the system
-
- System Objective
- 
-The system will continuously scan for trading pairs that reach a predefined Z-score threshold. Instead of opening a live trade immediately, these pairs will be added to a watchlist for further observation.
-
-This approach allows for identifying high-potential trading pairs based on their performance, leading to the discovery of even better opportunities, such as PEPEUSDT/WIFUSDT.
-
-The goal is to monitor their spread movement and performance over time before committing to a live trade.
-
-Step 1: Scanning for Potential Trade Pairs
-The system scans the market in real-time for pairs that meet specific criteria.
-
-The primary condition for adding a pair to the watchlist is that its Z-score surpasses a predefined threshold (e.g., ±2.0).
-
-Once a pair meets this threshold, it is added to the watchlist instead of executing a trade immediately.
-
-Step 2: Adding to the Watchlist & Storing Key Information
-Once a pair enters the watchlist, the system records essential trade data at that moment, including:
-
-Entry Prices: The prices of both assets in the pair when it was added to the watchlist.
-
-Spread Entry Value: The spread between the two assets at the time of watchlist entry.
-
-Z-Score (at Entry): The statistical measure indicating deviation from the mean when added.
-
-Other Relevant Data: Correlation strength, volatility, and any additional market conditions.
-
-Step 3: Monitoring Performance Over Time
-The system will track the spread movement and key indicators at regular intervals (e.g., every 1 hour).
-
-Each update will show how the pair has performed since being added to the watchlist.
-
-Performance will be measured based on:
-Change in spread value (percentage movement).
-
-Consistency of spread mean reversion (is the spread tightening or widening?).
-
-Trend of the Z-score (is it moving toward 0 or becoming more extreme?).
-
-
-Step 4: Identifying Consistent Positive Performance
-The system analyzes the observed performance over multiple time intervals.
-
-Pairs that show stable or favorable movement toward mean reversion will be flagged as potential trade candidates.
-
-Pairs that show erratic or worsening spread movement may be removed from the watchlist.
-
-Step 5: Trade Execution Decision
-If the pair consistently shows favorable movement, it qualifies for a potential live trade.
-
-The trader (or automated system) can then decide to open a live trade based on predefined entry conditions.
-
-If performance remains inconsistent, the pair is either removed from the watchlist or monitored further.
-
-
-Key Benefits of This Approach
-
-✔ Avoids Premature Entries: Ensures that only strong candidates are traded, reducing false signals.
-
-✔ Data-Driven Trade Selection: Observes pairs before committing capital, leading to better trade quality.
-
-✔ Performance-Based Filtering: Helps eliminate weak opportunities early.
-
-✔ Flexible Decision-Making: Allows both manual and automated execution based on proven performance.
-
-
-Contributions are welcome! If you'd like to contribute to this project please contact me on bart.staskiewicz@gmail.com
-
-
