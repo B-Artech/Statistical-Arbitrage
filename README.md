@@ -21,7 +21,7 @@ Base on the paper study
 
 **This is for educational purposes only. Although the code works right out of the box, use it only in a testing environment.**
 
-## Stage one - pair analysis framework
+## Pair analysis framework
 
 
 This methodology provides foundation for statistical arbitrage trading strategies identifying assets with significant mean-reverting properties.
@@ -42,7 +42,7 @@ Logarithmic returns are often preferred with Kalman approach)
 
 Half Life of mean reversion using Orstein-Uhlenbeck process
 
-## Stage two -  Backtest
+## Backtest
 
 By performing a simple backtest, we can significantly refine the selection pairs, reducing the initial pool from +20000 pairs to only the most statistically viable ones.
 
@@ -50,7 +50,7 @@ This process evaluates the historical performance of selected pairs using mean r
 
 The results helps identify pairs with the highest profitability potential, improving confidence before moving into live trading.
 
-## Stage three - Live trading
+## Live trading
 
 Execution of live Trades:
 
@@ -61,7 +61,7 @@ Opening short when spread is overvalued and showing reversal signals.
 Ensuring that trades are only opened if there is no existing open position for the pair.
 Save trade details for tracking and risk management.
 
-## Stage four - Risk Monitor
+## Risk Monitor
 
 Risk Monitor works as a separate bot to monitor account risk for drawdowns.
 
@@ -72,7 +72,7 @@ Account balance is measured every 60 seconds and tha daily threshold is restarti
 
 If the loss exceeds the threshold all positions are closed and trading is suspended for 24H.
 
-## Stage five - Watch-list
+## Watch-list
 
 Since we trade pairs it could be difficult to visual mach assets on trading platforms.
 
